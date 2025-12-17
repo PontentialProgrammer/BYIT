@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+body {
+    background-color: black;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(135deg, #eaeaea 0%, #ffffff 100%);
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family: 'Raleway-thin', sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+hr {
+    margin: 10px auto;
+    width: 50%;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+input[type="email"], 
+input[type="password"],
+input[type="text"] {
+    height: 40px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border-color: #666;
+    box-shadow: 0 0 5px rgba(102, 102, 102, 0.3);
+}
+
+.reg-redirect {
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+input[type="submit"] {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    height: 40px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #fff;
+}
+
+
+@media (max-width: 600px) {
+    form {
+        width:90%;
+        padding: 20px;
+        border-radius: 5px;
+        gap: 10px;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    input[type="email"], 
+    input[type="password"], 
+    input[type="submit"] {
+        font-size: 0.9rem;
+    }
+}
+
+.error-box {
+    background-color: rgba(255, 77, 77, 0.15);
+    border: 1px solid #ff4d4d;
+    color: #b30000;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: slideDown 0.4s ease-out forwards;
+}
+
+.error-box ul {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.9rem;
+}
+
+.error-box li {
+    margin-bottom: 5px;
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

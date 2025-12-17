@@ -1,0 +1,22 @@
+@font-face {
+    font-family: BR;
+    src: url("./otfs/Font\ Awesome\ 7\ Brands-Regular-400.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("./Raleway/Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: Raleway-thin;
+    src: url("./Raleway/static/Raleway-Thin.ttf");
+}
+@font-face {
+    font-family: Raleway-black;
+    src: url("./Raleway/static/Raleway-Black.ttf");
+}
+/* @font-face {
+    font-family: GraublauWeb;
+    font-weight: bold;
+    src: url("path/GraublauWebBold.otf") format("opentype");
+} */

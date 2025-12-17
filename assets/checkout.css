@@ -1,0 +1,51 @@
+.orders > *{
+    font-family: Raleway;
+}
+
+body{
+    background-color: #1E1E1E;
+}
+.orders{
+    margin:auto;
+    width: 95%;
+    padding-top: 50px;
+}
+.orders h1{
+    margin-bottom: 10px;
+    color: white;
+}
+.order {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1.2em;
+    background-color: white;
+    height: 50px;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: fit-content;
+}
+@media (max-width:768px) {
+    .order{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        
+    }
+    .order p {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+}
+.order:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 0.4s ease;
+}
+.tag{
+    font-size: 0.8em;
+    font-weight:bold;
+}
